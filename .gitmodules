@@ -4,3 +4,6 @@
 [submodule "theme"]
 	path = theme
 	url = git@github.com:fhirschmann/mysite-theme.git
+[submodule "pelican-plugins2/pelican-knitr"]
+	path = pelican-plugins2/pelican-knitr
+	url = https://github.com/sbisaacson/pelican-knitr.git

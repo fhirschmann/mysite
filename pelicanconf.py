@@ -12,7 +12,7 @@ EXTRA_PATH_METADATA = {
         'extra/robots.txt': {'path': 'robots.txt'},
         'images/favicon.ico': {'path': 'favicon.ico'},
 }
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['pelican-plugins', 'pelican-plugins2']
 PLUGINS = ['pelican_javascript', 'render_math', 'pelican-cite', 'pelican-knitr']
 
 PUBLICATIONS_SRC = 'content/bibliography.bib'
