@@ -24,6 +24,7 @@ HIDE_SIDEBAR = True
 THEME = 'theme'
 BOOTSTRAP_THEME = 'cosmo'
 PYGMENTS_STYLE = 'monokai'
+DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
 TIMEZONE = 'Europe/Berlin'
 
@@ -43,10 +44,12 @@ LINKS = ()
 
 # Social widget
 SOCIAL = (
-        ('Xing', 'https://www.xing.com/profile/Fabian_Hirschmann2'),
-        ('LinkedIn', 'http://www.linkedin.com/in/fhirschmann'),
         ('Github', 'https://github.com/fhirschmann'),
+        ('Mail', 'mailto:fhirschmann@gmail.com', 'pencil'),
         ('Facebook', 'http://www.facebook.com/fhirschmann'),
+        ('LinkedIn', 'http://www.linkedin.com/in/fhirschmann'),
+        ('Xing', 'https://www.xing.com/profile/Fabian_Hirschmann2'),
+        ('BTC', 'bitcoin:16Mhwr5U9JVvVLEGwyPqyR1WE8qaJtzsin', 'bitcoin'),
 )
 
 DISQUS_SITENAME = "0x0b"
