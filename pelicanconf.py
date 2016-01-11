@@ -13,7 +13,7 @@ EXTRA_PATH_METADATA = {
         'images/favicon.ico': {'path': 'favicon.ico'},
 }
 PLUGIN_PATHS = ['pelican-plugins', 'pelican-plugins2']
-PLUGINS = ['pelican_javascript', 'render_math', 'pelican-cite', 'pelican-knitr']
+PLUGINS = ['pelican_javascript', 'render_math', 'pelican-cite', 'pelican-knitr', 'sitemap']
 
 PUBLICATIONS_SRC = 'content/bibliography.bib'
 
@@ -53,9 +53,27 @@ SOCIAL = (
         ('BTC', 'bitcoin:16Mhwr5U9JVvVLEGwyPqyR1WE8qaJtzsin', 'bitcoin'),
 )
 
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
+
 DISQUS_SITENAME = "0x0b"
 
 DEFAULT_PAGINATION = False
+LOAD_CONTENT_CACHE = True
+CACHE_CONTENT = True
+CHECK_MODIFIED_METHOD = "md5"
+#CONTENT_CACHING_LAYER = "generator"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=0x0b.de
 SSH_PORT=22
 SSH_USER=fabian
-SSH_TARGET_DIR=/var/www
+SSH_TARGET_DIR=/var/www/0x0b.de/_/
 
 S3_BUCKET=my_s3_bucket
 
@@ -79,9 +79,9 @@ endif
 
 serve-global:
 ifdef SERVER
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 $(SERVER)
+	cd $(OUTPUTDIR) && $(PY) -m pelican.server 8000 $(SERVER)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 0.0.0.0
+	cd $(OUTPUTDIR) && $(PY) -m pelican.server 8000 0.0.0.0
 endif
 
 
@@ -103,7 +103,7 @@ ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --archive --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 dropbox_upload: publish
 	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)

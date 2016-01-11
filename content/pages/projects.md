@@ -13,13 +13,11 @@ desc:   Selection of my current and past projects
   Preprocesses a Flask FlatPage using [knitr](http://yihui.name/knitr/)
   such that code chunks are evaluated before the next step in the the
   rendering process occurs.
-  An [exemplary test page]({{ url_for('page', path='sandbox/knitr') }})
-  is also available. Written in [Python](http://python.org).
+  Written in [Python](http://python.org).
 - [Flask-FlatPages-Pandoc](http://github.com/fhirschmann/Flask-FlatPages-Pandoc):
   An HTML renderer for [Flask-FlatPages](http://pythonhosted.org/Flask-FlatPages/)
-  using [pandoc](http://johnmacfarlane.net/pandoc/) as backend. Analogously,
-  an [exemplary test page]({{ url_for('page', path='sandbox/pandoc') }})
-  is available. Written in [Python](http://python.org).
+  using [pandoc](http://johnmacfarlane.net/pandoc/) as backend.
+  Written in [Python](http://python.org).
 
 ### Finished and Feature-Complete Projects
 - [halttimer](http://github.com/fhirschmann/halttimer):
