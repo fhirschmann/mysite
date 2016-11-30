@@ -22,7 +22,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 HIDE_SIDEBAR = True
 
 THEME = 'theme'
-BOOTSTRAP_THEME = 'cosmo'
+BOOTSTRAP_THEME = 'yeti'
 PYGMENTS_STYLE = 'monokai'
 DISPLAY_ARTICLE_INFO_ON_INDEX = False
 
@@ -31,7 +31,7 @@ TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = 'en'
 
 GITHUB_URL = 'https://github.com/fhirschmann'
-GOOGLE_ANALYTICS = 'UA-30143340-1'
+#GOOGLE_ANALYTICS = 'UA-30143340-1'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -39,14 +39,14 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-FAVICON = True
+FAVICON = "favicon.ico"
 
 LINKS = ()
 
 # Social widget
 SOCIAL = (
         ('Github', 'https://github.com/fhirschmann'),
-        ('Mail', 'mailto:fhirschmann@gmail.com', 'pencil'),
+        ('Mail', 'mailto:fabian@hirschmann.email', 'pencil'),
         ('Facebook', 'http://www.facebook.com/fhirschmann'),
         ('LinkedIn', 'http://www.linkedin.com/in/fhirschmann'),
         ('Xing', 'https://www.xing.com/profile/Fabian_Hirschmann2'),

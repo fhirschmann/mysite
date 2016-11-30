@@ -8,7 +8,7 @@ at [TU Darmstadt](https://www.tu-darmstadt.de) on recurrent neural
 networks for machine translation. I'm generally interested
 in data science (machine learning, artificial intelligence, algorithms
 etc...), cryptocurrency, and of course GNU/Linux. On the bottom of this page,
-you can find some pointers in case you want to get in touch.
+you can find some pointers in case you want to get in touch (note that some Adblockers block the social contact icons).
 
 I usually sign my mails through [this key](http://pgp.mit.edu/pks/lookup?op=vindex&search=0xBE59A8D5E55F9288) using one of its subkeys, i.e.:
 <div class="gpg">
